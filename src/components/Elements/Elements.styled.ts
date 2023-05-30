@@ -38,8 +38,11 @@ export const ElementsContainer = styled.div`
       flex-direction: column;
       align-items: center;
     }
-    .title {
-      font-size: 25px;
-    }
+  }
+
+    @media (max-width: 600px) {
+      .title {
+        font-size: 25px;
+      }
   }
 `
