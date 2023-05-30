@@ -1,14 +1,14 @@
 import styled from "styled-components";
 
 export const SliderContainer = styled.div`
-  max-height: 90vh;
   position: relative;
-
+  display: block;
+  object-fit: cover;
   @media (max-width: 600px) {
     img {
+      object-fit: cover;
       width: 360px;
       height: 80vh;
-      object-fit: cover;
     }
   }
   
