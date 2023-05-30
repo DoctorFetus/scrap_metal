@@ -4,6 +4,7 @@ export const ContactsWrapper = styled.div`
 
   min-height: 50vh;
   margin: 0 auto;
+
   .title {
     font-size: 30px;
     text-align: center;
@@ -27,8 +28,8 @@ export const ContactsWrapper = styled.div`
   .text {
     line-height: 27px;
   }
-  
-  @media(max-width: 600px) {
+
+  @media (max-width: 600px) {
     .information_wrapper {
       margin-top: 20px;
       padding: 20px;
@@ -43,7 +44,6 @@ export const ContactsWrapper = styled.div`
     .information {
       gap: 20px;
     }
-    
-  }
 
-`
+  }
+`;

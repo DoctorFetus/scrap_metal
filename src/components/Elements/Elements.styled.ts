@@ -37,6 +37,7 @@ export const ElementsContainer = styled.div`
       font-size: 25px;
     }
     .elements_wrapper {
+      display: flex;
       flex-direction: column;
       align-items: center;
     }
