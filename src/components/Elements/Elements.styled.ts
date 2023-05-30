@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const ElementsContainer = styled.div`
+
   text-align: center;
   min-height: 50vh;
 
@@ -42,4 +43,4 @@ export const ElementsContainer = styled.div`
       align-items: center;
     }
   }
-`
+`;
