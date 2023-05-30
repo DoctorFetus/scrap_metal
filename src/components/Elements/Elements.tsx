@@ -1,4 +1,3 @@
-import React from 'react';
 import {ElementsContainer} from "./Elements.styled";
 import aluminium from "./../../common/icons/aluminium.png"
 import ferum from "./../../common/icons/ferum.png"

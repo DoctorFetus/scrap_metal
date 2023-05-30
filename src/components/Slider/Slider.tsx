@@ -12,7 +12,7 @@ const Slider = () => {
     const imgStyle = {filter: "brightness(60%)"}
 
     return <SliderContainer>
-        <Carousel autoplay showThumbs={false} showStatus={false}>
+        <Carousel showThumbs={false} showStatus={false}>
             <div>
                 <img style={imgStyle} src={photo1} alt="1"/>
             </div>

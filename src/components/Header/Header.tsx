@@ -1,4 +1,3 @@
-import React from 'react';
 import {HeaderContainer, HeaderTitle, LinksContainer} from "./Header.styled";
 
 const Header = () => {

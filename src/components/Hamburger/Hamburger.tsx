@@ -1,4 +1,3 @@
-import React from "react";
 
 import { StyledHamburger} from "./Hamburger.styled";
 

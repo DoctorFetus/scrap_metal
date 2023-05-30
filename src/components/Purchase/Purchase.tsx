@@ -1,4 +1,3 @@
-import React from 'react';
 import {Container} from "../../common/Container.styled";
 import {PurchaseContainer} from "./Purchase.styled";
 

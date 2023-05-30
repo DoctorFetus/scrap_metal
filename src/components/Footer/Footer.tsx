@@ -1,4 +1,3 @@
-import React from 'react';
 import {FooterContainer} from "./Footer.styled";
 import {Container} from "../../common/Container.styled";
 

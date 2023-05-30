@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import { useState, useRef } from "react";
 
 import Hamburger from "../Hamburger/Hamburger";
 import { StyledMenu, StyledLink } from "./Menu.styled";
