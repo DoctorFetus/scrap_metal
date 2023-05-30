@@ -25,9 +25,9 @@ export const FooterContainer = styled.div`
   }
 
   @media (max-width: 600px) {
-    & {
-      padding: 10px;
-    }
+    //& {
+    //  padding: 10px;
+    //}
     .footer_wrapper {
       flex-direction: column;
       font-size: 10px;
