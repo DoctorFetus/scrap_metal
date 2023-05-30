@@ -13,6 +13,7 @@ export const ElementsContainer = styled.div`
   .elements_wrapper {
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
   }
 
   .title {
@@ -33,12 +34,12 @@ export const ElementsContainer = styled.div`
   }
 
   @media (max-width: 600px) {
-    .title {
-      font-size: 25px;
-    }
     .elements_wrapper {
       flex-direction: column;
       align-items: center;
     }
+    .title {
+      font-size: 25px;
+    }
   }
-`;
+`
