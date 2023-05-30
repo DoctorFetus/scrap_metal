@@ -34,7 +34,6 @@ export const ContactsWrapper = styled.div`
       padding: 20px;
       gap: 20px;
     }
-    
     .title {
       font-size: 25px;
     }

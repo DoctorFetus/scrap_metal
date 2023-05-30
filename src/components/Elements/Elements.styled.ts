@@ -9,7 +9,7 @@ export const ElementsContainer = styled.div`
     width: 150px;
   }
 
-  .wrapper {
+  .elements_wrapper {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -33,13 +33,10 @@ export const ElementsContainer = styled.div`
   }
 
   @media (max-width: 600px) {
-    margin-top: 0;
-    
     .title {
       font-size: 25px;
     }
-    
-    .wrapper {
+    .elements_wrapper {
       flex-direction: column;
       align-items: center;
     }

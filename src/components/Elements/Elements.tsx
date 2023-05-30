@@ -9,7 +9,7 @@ const Elements = () => {
         <ElementsContainer>
             <Container>
                 <h2 className={"title"}>Цветные металлы</h2>
-                <div className={"wrapper"}>
+                <div className={"elements_wrapper"}>
                     <div className={"icon_title"}>
                         <img src={aluminium} alt="Алюминий"/>
                         <div>Алюминий</div>

@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <FooterContainer>
             <Container>
-                <div className={"wrapper"}>
+                <div className={"footer_wrapper"}>
                     <span>Управляющая компания: ООО КФК-Мастер Трейд </span>
                     <span>ИНН: 7703349888</span>
                     <span>КПП: 772001001</span>
