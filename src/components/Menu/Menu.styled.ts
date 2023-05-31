@@ -22,12 +22,9 @@ export const StyledMenu = styled.nav<{ open: boolean }>`
   @media (max-width: 600px) {
     width: 100%;
   }
-
-
   @media (max-width: 600px) {
       z-index: 3;
   }
-  
 `;
 
 export const StyledLink = styled.a`

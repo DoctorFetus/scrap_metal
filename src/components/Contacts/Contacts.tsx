@@ -1,12 +1,12 @@
 import {Container} from "../../common/Container.styled";
 import {ContactsWrapper} from "./Contacts.styled";
-import {forwardRef, LegacyRef} from "react";
+import {ForwardedRef, forwardRef, LegacyRef} from "react";
 
 type Contacts = {
-    ref:  LegacyRef<HTMLDivElement>
+    ref: LegacyRef<HTMLDivElement>
 }
 
-const Contacts = forwardRef((props: Contacts, ref) => {
+const Contacts = forwardRef((props: Contacts, ref: ForwardedRef<HTMLDivElement>) => {
     return (
         <Container>
             <ContactsWrapper>
