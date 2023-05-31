@@ -1,4 +1,4 @@
-import {useState, useRef, RefObject} from "react";
+import {useState, useRef, RefObject, useEffect} from "react";
 
 import Hamburger from "../Hamburger/Hamburger";
 import { StyledMenu, StyledLink } from "./Menu.styled";
@@ -12,12 +12,24 @@ import {LinksProps} from "../Header/Header";
 const Menu = ({scrollToRef, contactsRef, metalRef, informationRef}: LinksProps) => {
     const [open, setOpen] = useState<boolean>(false);
     const node = useRef<HTMLDivElement | null>(null);
+
+
+    useEffect(() => {
+        if (open) {
+            document.body.style.overflow = "hidden";
+        } else {
+            document.body.style.overflow = "auto";
+        }
+    }, [open]);
+
+
     const navigation = (ref: RefObject<HTMLElement>) => {
         scrollToRef(ref)
         setOpen(false)
     };
 
-    useOnClickOutside(node, () => setOpen(false));
+    useOnClickOutside(node, () => {
+        setOpen(false)});
 
     return (
         <div ref={node}>

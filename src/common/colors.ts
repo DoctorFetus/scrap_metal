@@ -3,5 +3,6 @@ export const colors = {
     black: "black",
     pearl: "#fdf2e9",
     lightblue: "#93CEF0",
-    white: "white"
+    white: "white",
+    gray: "rgb(165,165,165)"
 };
