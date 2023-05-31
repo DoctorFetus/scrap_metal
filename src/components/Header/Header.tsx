@@ -1,13 +1,22 @@
 import {HeaderContainer, HeaderTitle, LinksContainer} from "./Header.styled";
+import {RefObject} from "react";
 
-const Header = () => {
+export type LinksProps = {
+    scrollToRef: (ref: RefObject<HTMLElement>) => void
+    contactsRef:  RefObject<HTMLElement>
+    metalRef: RefObject<HTMLElement>
+    informationRef: RefObject<HTMLElement>
+
+}
+
+const Header = ({scrollToRef, contactsRef, metalRef, informationRef}: LinksProps) => {
     return (
         <HeaderContainer>
             <HeaderTitle>ООО КФК Мастер трейд</HeaderTitle>
             <LinksContainer>
-                <a href={"#"}>Металл</a>
-                <a href={"#"}>Информация</a>
-                <a href={"#"}>Контакты</a>
+                <a onClick={() => scrollToRef(metalRef)}>Металл</a>
+                <a onClick={() => scrollToRef(informationRef)}>Информация</a>
+                <a onClick={() => scrollToRef(contactsRef)}>Контакты</a>
             </LinksContainer>
 
 

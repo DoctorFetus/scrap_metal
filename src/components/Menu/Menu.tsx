@@ -1,24 +1,30 @@
-import { useState, useRef } from "react";
+import {useState, useRef, RefObject} from "react";
 
 import Hamburger from "../Hamburger/Hamburger";
 import { StyledMenu, StyledLink } from "./Menu.styled";
 
 import {useOnClickOutside} from "../../hooks/useOnClickOutside";
+import {LinksProps} from "../Header/Header";
 
 
-const Menu = () => {
+
+
+const Menu = ({scrollToRef, contactsRef, metalRef, informationRef}: LinksProps) => {
     const [open, setOpen] = useState<boolean>(false);
     const node = useRef<HTMLDivElement | null>(null);
-    const close = () => setOpen(false);
+    const navigation = (ref: RefObject<HTMLElement>) => {
+        scrollToRef(ref)
+        setOpen(false)
+    };
 
     useOnClickOutside(node, () => setOpen(false));
 
     return (
         <div ref={node}>
             <StyledMenu open={open}>
-                <StyledLink onClick={() => close()}>Link 1</StyledLink>
-                <StyledLink onClick={() => close()}>Link 2</StyledLink>
-                <StyledLink onClick={() => close()}>Link 3</StyledLink>
+                <StyledLink onClick={() => navigation(metalRef)}>Металл</StyledLink>
+                <StyledLink onClick={() => navigation(informationRef)}>Информация</StyledLink>
+                <StyledLink onClick={() => navigation(contactsRef)}>Контакты</StyledLink>
             </StyledMenu>
             <Hamburger open={open} setOpen={setOpen} />
         </div>

@@ -11,7 +11,7 @@ export const SliderContainer = styled.div`
       height: 80vh;
     }
   }
-  
+
 `
 
 export const Titles = styled.div`
@@ -19,9 +19,10 @@ export const Titles = styled.div`
   position: absolute;
   top: 60%;
   left: 40%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -60%);
 
-  h1 {
+  .big_title {
+    text-align: left;
     font-size: 60px;
     font-weight: 300;
     padding-top: 20px;
@@ -30,18 +31,19 @@ export const Titles = styled.div`
     text-shadow: 0 2px 5px rgba(0, 0, 0, 0.0);
   }
 
-  h1::after {
+  .big_title::after {
     content: '';
     display: block;
-    width: 90%;
+    width: 70%;
     height: 4px;
     margin-top: 10px;
     background-color: black;
     transition: transform 0.3s ease-in-out;
     transform: scaleX(1);
   }
-  
-  h2 {
+
+  .sub_title {
+    text-align: left;
     font-size: 30px;
     font-weight: 300;
     padding-top: 1px;
@@ -49,13 +51,15 @@ export const Titles = styled.div`
     font-family: sans-serif;
     text-shadow: 0 2px 6px rgba(0, 0, 0, 0.0);
   }
-  
+
   @media (max-width: 600px) {
-    h1 { 
+    .big_title {
       font-size: 30px;
     }
-    h2 {
-      font-size: 20px;
+
+    @media (max-width: 600px) {
+      .sub_title {
+        font-size: 20px;
+      }
     }
-  }
 `

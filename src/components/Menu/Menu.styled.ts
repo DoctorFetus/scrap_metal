@@ -9,7 +9,7 @@ export const StyledMenu = styled.nav<{ open: boolean }>`
   height: 100vh;
   width: 20vw;
   position: fixed;
-  background-color: ${colors.lightblue};
+  background-color: ${colors.white};
   z-index: 1;
 
   display: flex;
@@ -22,12 +22,18 @@ export const StyledMenu = styled.nav<{ open: boolean }>`
   @media (max-width: 600px) {
     width: 100%;
   }
+
+
+  @media (max-width: 600px) {
+      z-index: 3;
+  }
+  
 `;
 
 export const StyledLink = styled.a`
   padding: 0 2rem;
   font-size: 2rem;
-  color: ${colors.pearl};
+  color: ${colors.black};
   text-decoration: none;
 
   :hover {

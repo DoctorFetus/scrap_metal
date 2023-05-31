@@ -3,10 +3,16 @@ import aluminium from "./../../common/icons/aluminium.png"
 import ferum from "./../../common/icons/ferum.png"
 import copper from "./../../common/icons/copper.png"
 import {Container} from "../../common/Container.styled";
+import {forwardRef, LegacyRef} from "react";
 
-const Elements = () => {
+
+type ElementsProps = {
+    ref:  LegacyRef<HTMLDivElement>
+}
+
+const Elements = forwardRef((props: ElementsProps, ref) => {
     return (
-        <ElementsContainer>
+        <ElementsContainer ref={ref}>
             <Container>
                 <h2 className={"title"}>Цветные металлы</h2>
                 <div className={"elements_wrapper"}>
@@ -27,6 +33,6 @@ const Elements = () => {
 
         </ElementsContainer>
     );
-};
+});
 
 export default Elements;

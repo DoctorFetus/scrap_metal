@@ -1,11 +1,16 @@
 import {Container} from "../../common/Container.styled";
 import {ContactsWrapper} from "./Contacts.styled";
+import {forwardRef, LegacyRef} from "react";
 
-const Contacts = () => {
+type Contacts = {
+    ref:  LegacyRef<HTMLDivElement>
+}
+
+const Contacts = forwardRef((props: Contacts, ref) => {
     return (
         <Container>
             <ContactsWrapper>
-                <div className={"information_wrapper"}>
+                <div className={"information_wrapper"} ref={ref}>
                     <div className={"information"}>
                         <h3 className={"title"}>Контакты</h3>
                         <span className={"text"}>
@@ -27,6 +32,6 @@ const Contacts = () => {
             </ContactsWrapper>
         </Container>
     );
-};
+});
 
 export default Contacts;

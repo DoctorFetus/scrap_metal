@@ -23,9 +23,10 @@ export const StyledHamburger = styled.button<{ open: boolean }>`
   @media (max-width: 600px) {
     left: ${({ open }) => (open ? "initial" : "3vw")};
     right: ${({ open }) => (open ? "2vw" : "initial")};
-    z-index: 10;
+    z-index: 4;
+    
   }
-
+  
   div {
     position: relative;
     width: 2rem;
@@ -34,7 +35,7 @@ export const StyledHamburger = styled.button<{ open: boolean }>`
     transition: all 0.3s linear;
     transform-origin: 1px;
     background-color: ${({ open }) =>
-    open ? colors.pearl : colors.pearl};
+    open ? colors.black : colors.pearl};
 
     :first-child {
       transform: ${({ open }) => (open ? "rotate(45deg)" : "rotate(0)")};
