@@ -14,7 +14,7 @@ const Contacts = forwardRef((props: Contacts, ref: ForwardedRef<HTMLDivElement>)
                     <div className={"information"}>
                         <h3 className={"title"}>Контакты</h3>
                         <span className={"text"}>
-                            WhatsUp: +79851257968, Иван <br/>
+                            WhatsApp: +79851257968, Иван <br/>
                             Адрес: Ивановская область, Фурмановский район, д. Исаевское<br/>
                             <strong>Доставка на расстояние до 500км от города Иваново</strong><br/>
                         </span>
