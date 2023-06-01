@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const SliderContainer = styled.div`
+export const SliderContainer = styled.section`
   position: relative;
   display: block;
   object-fit: cover;
@@ -54,7 +54,7 @@ export const Titles = styled.div`
 
   @media (max-width: 900px) {
     .big_title {
-      font-size: 30px;
+      font-size: 28px;
     }
 
     //@media (max-width: 600px) {

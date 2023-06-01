@@ -5,8 +5,6 @@ const Purchase = () => {
     return (
         <Container>
         <PurchaseContainer>
-
-               <h3>15 тысяч рублей за тонну</h3>
                 <a className={"call"} href="tel:+79851257968">Позвонить нам</a>
         </PurchaseContainer>
         </Container>

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const GalleryContainer = styled.div`
+export const GalleryContainer = styled.section`
   margin-top: 50px;
   @media (max-width: 600px) {
     //display: none;

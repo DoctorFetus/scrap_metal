@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ContactsWrapper = styled.div`
+export const ContactsWrapper = styled.section`
 
   min-height: 50vh;
   margin: 0 auto;

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ElementsContainer = styled.div`
+export const ElementsContainer = styled.section`
 
   text-align: center;
   //min-height: 50vh;
@@ -8,6 +8,8 @@ export const ElementsContainer = styled.div`
   img {
     height: 150px;
     width: 150px;
+    display: block;
+    margin: 0 auto;
   }
 
   .elements_wrapper {
@@ -31,6 +33,10 @@ export const ElementsContainer = styled.div`
     gap: 10px;
     font-size: 20px;
     font-weight: 500;
+  }
+  
+  .price {
+    font-weight: 700;
   }
 
   @media (max-width: 600px) {

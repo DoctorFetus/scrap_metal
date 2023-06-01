@@ -39,7 +39,7 @@ const Slider = forwardRef((props: SliderProps, ref) => {
             <div>
                 <img style={imgStyle} src={photo5} alt="5"/>
                 <Titles>
-                    <h2 className={"big_title"}>Еженедельно отгружаем 60 тонн</h2>
+                    <h2 className={"big_title"}>Еженедельно отгружаем <br/> 60 тонн</h2>
                 </Titles>
             </div>
         </Carousel>

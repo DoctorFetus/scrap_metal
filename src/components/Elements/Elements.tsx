@@ -19,14 +19,17 @@ const Elements = forwardRef((props: ElementsProps, ref) => {
                     <div className={"icon_title"}>
                         <img src={aluminium} alt="Алюминий"/>
                         <div>Алюминий</div>
+                        <div className={"price"}>600₽ за килограмм</div>
                     </div>
                     <div className={"icon_title"}>
                         <img src={ferum} alt="Железо"/>
                         <div>Железо</div>
+                        <div className={"price"}>15000₽ за тонну</div>
                     </div>
                     <div className={"icon_title"}>
                         <img src={copper} alt="Медь"/>
                         <div>Медь</div>
+                        <div className={"price"}>600₽ за килограмм</div>
                     </div>
                 </div>
             </Container>

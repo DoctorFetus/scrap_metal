@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
-export const PurchaseContainer = styled.div`
+export const PurchaseContainer = styled.section`
     display: flex;
     //justify-content: space-between;
     flex-direction: column;
     font-size: 30px;
     //min-height: 35vh;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 30px;
   
   .call {
     display: block;
@@ -24,7 +24,6 @@ export const PurchaseContainer = styled.div`
   }
   
   @media (max-width: 600px) {
-    margin-top: 50px;
     font-size: 20px;
     min-height: 0;
   }
