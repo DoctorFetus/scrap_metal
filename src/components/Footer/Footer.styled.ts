@@ -29,6 +29,13 @@ export const FooterContainer = styled.div`
     text-align: center;
   }
 
+
+  @media (max-width: 1000px) {
+    .footer_wrapper {
+      font-size: 10px;
+    }
+  }
+  
   @media (max-width: 600px) {
     .footer_wrapper {
       flex-direction: column;
@@ -37,7 +44,7 @@ export const FooterContainer = styled.div`
     }
   }
   
-  @media (max-width: 600px) {
+  @media (max-width: 1000px) {
     .copyright {
       margin-top: 4px;
       font-size: 8px;

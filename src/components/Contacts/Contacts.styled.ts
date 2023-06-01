@@ -32,6 +32,7 @@ export const ContactsWrapper = styled.div`
   @media (max-width: 1130px) {
     .information_wrapper {
       flex-direction: column;
+      gap: 20px;
     }
   }
   
