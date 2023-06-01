@@ -23,7 +23,7 @@ export const Titles = styled.div`
 
   .big_title {
     text-align: left;
-    font-size: 60px;
+    font-size: 55px;
     font-weight: 300;
     padding-top: 20px;
     padding-bottom: 10px;
@@ -52,14 +52,14 @@ export const Titles = styled.div`
     text-shadow: 0 2px 6px rgba(0, 0, 0, 0.0);
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 900px) {
     .big_title {
       font-size: 30px;
     }
 
-    @media (max-width: 600px) {
-      .sub_title {
-        font-size: 20px;
-      }
+    //@media (max-width: 600px) {
+    //  .big_title:last-child {
+    //    font-size: 20px;
+    //  }
     }
 `

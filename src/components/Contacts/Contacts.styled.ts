@@ -29,11 +29,18 @@ export const ContactsWrapper = styled.div`
     line-height: 27px;
   }
 
+  @media (max-width: 1130px) {
+    .information_wrapper {
+      flex-direction: column;
+    }
+  }
+  
   @media (max-width: 600px) {
     .information_wrapper {
-      margin-top: 20px;
+      margin: 20px auto;
       padding: 20px;
       gap: 20px;
+      flex-direction: row;
     }
     .title {
       font-size: 25px;

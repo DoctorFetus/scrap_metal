@@ -5,8 +5,9 @@ export const PurchaseContainer = styled.div`
     //justify-content: space-between;
     flex-direction: column;
     font-size: 30px;
-    min-height: 35vh;
+    //min-height: 35vh;
     align-items: center;
+    margin-top: 50px;
   
   .call {
     display: block;

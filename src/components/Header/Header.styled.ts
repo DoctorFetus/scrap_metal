@@ -25,6 +25,7 @@ export const LinksContainer = styled.div`
   a {
     color: black;
     text-decoration: none;
+    cursor: pointer;
   }
   
   a:hover {

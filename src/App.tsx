@@ -7,6 +7,7 @@ import Purchase from "./components/Purchase/Purchase";
 import Contacts from "./components/Contacts/Contacts";
 import Footer from "./components/Footer/Footer";
 import {useRef} from "react";
+import Gallery from "./components/Galery/Gallery";
 
 function App() {
 
@@ -33,6 +34,7 @@ function App() {
             <Slider ref={metalRef}/>
             <Elements ref={informationRef}/>
             <Purchase />
+            <Gallery />
             <Contacts ref={contactsRef}/>
             <Footer/>
         </>
