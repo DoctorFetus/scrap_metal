@@ -3,13 +3,17 @@ import styled from "styled-components";
 export const GalleryContainer = styled.div`
   margin-top: 50px;
   @media (max-width: 600px) {
-    display: none;
+    //display: none;
   }
 `
 
 export const GalleryTitle = styled.h2`
   text-align: center;
   font-size: 40px;
+
+  @media (max-width: 600px) {
+    font-size: 25px;
+  }
 `
 
 export const SmallPhotosContainer = styled.div`
