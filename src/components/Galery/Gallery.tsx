@@ -1,10 +1,9 @@
 import React, {useState} from 'react';
-import photo1 from "../../common/images/gallery/gallery_1.jpg"
-import photo2 from "../../common/images/gallery/gallery_2.jpg"
-import photo3 from "../../common/images/gallery/gallery_3.jpg"
-import photo4 from "../../common/images/gallery/gallery_4.jpg"
-import photo5 from "../../common/images/gallery/gallery_5.jpg"
-
+import photo1 from "./../../common/gallery/gallery_1.jpg"
+import photo2 from "./../../common/gallery/gallery_2.jpg"
+import photo3 from "./../../common/gallery/gallery_3.jpg"
+import photo4 from "./../../common/gallery/gallery_4.jpg"
+import photo5 from "./../../common/gallery/gallery_5.jpg"
 import {
     BigImg,
     BigPhotoContainer,
