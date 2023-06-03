@@ -11,6 +11,8 @@ import Gallery from "./components/Galery/Gallery";
 
 function App() {
 
+
+
     const metalRef = useRef(null)
     const informationRef = useRef(null)
     const contactsRef = useRef(null)

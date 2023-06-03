@@ -1,9 +1,9 @@
 import {Carousel} from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import photo1 from "../../common/images/1.jpg"
-import photo3 from "../../common/images/2.jpg"
-import photo4 from "../../common/images/3.jpg"
-import photo5 from "../../common/images/4.jpg"
+import photo1 from "../../common/images/slider/1.jpg"
+import photo3 from "../../common/images/slider/2.jpg"
+import photo4 from "../../common/images/slider/3.jpg"
+import photo5 from "../../common/images/slider/4.jpg"
 import {SliderContainer, Titles} from "./Slider.styled";
 import {forwardRef, LegacyRef} from "react";
 

@@ -28,7 +28,7 @@ export const BigPhotoContainer = styled.div`
 `
 
 export const SmallImg = styled.img`
-  width: 20%;
+  width: 15%;
   height: auto;
   cursor: pointer;
 `

@@ -1,8 +1,10 @@
 import React, {useState} from 'react';
-import photo1 from "./../../common/images/1.jpg"
-import photo2 from "./../../common/images/2.jpg"
-import photo3 from "./../../common/images/3.jpg"
-import photo4 from "./../../common/images/4.jpg"
+import photo1 from "../../common/images/gallery/gallery_1.jpg"
+import photo2 from "../../common/images/gallery/gallery_2.jpg"
+import photo3 from "../../common/images/gallery/gallery_3.jpg"
+import photo4 from "../../common/images/gallery/gallery_4.jpg"
+import photo5 from "../../common/images/gallery/gallery_5.jpg"
+
 import {
     BigImg,
     BigPhotoContainer,
@@ -18,10 +20,11 @@ type photosType= {
 
 const Gallery = () => {
     const photos: Array<photosType> = [
-        {id: 1, src: photo1, alt: "1"},
-        {id: 2, src: photo2, alt: "2"},
-        {id: 3, src: photo3, alt: "3"},
-        {id: 4, src: photo4, alt: "4"}
+        {id: 1, src: photo1, alt: "gallery_1"},
+        {id: 2, src: photo2, alt: "gallery_2"},
+        {id: 3, src: photo3, alt: "gallery_3"},
+        {id: 4, src: photo4, alt: "gallery_4"},
+        {id: 5, src: photo5, alt: "gallery_5"}
     ]
 
     const [current, setCurrent] = useState<string>(photo1)
